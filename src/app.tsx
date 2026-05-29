@@ -1,3 +1,14 @@
+import Container from './components/core/container/Container';
+import { Header } from './components/header/Header';
+import Sidebar from './components/sidebar/Sidebar';
+
 export function App() {
-  return <h1>OFS Feeds</h1>;
+  return (
+    <>
+      <Header />
+      <Container>
+        <Sidebar />
+      </Container>
+    </>
+  );
 }
